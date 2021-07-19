@@ -6,6 +6,6 @@ public class SquareOfNumber{
 		Scanner sc = new Scanner(System.in);
 		num = sc.nextInt();
 		sq = num*num;
-		System.out.println("Square Of a Number is : " +sq);
+		System.out.println(" The Square Of an integer Number is : " +sq);
 	}
 }
