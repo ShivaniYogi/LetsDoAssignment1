@@ -1,0 +1,279 @@
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ mkdir LetsDoAssignment1
+
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ cd LetsDoAssignment1
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1
+$ pwd
+/c/Users/user/LetsDoAssignment1
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1
+$ ls
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1
+$ ls -a
+./  ../
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1
+$ git init
+Initialized empty Git repository in C:/Users/user/LetsDoAssignment1/.git/
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ notepad SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ notepad TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ notepad EvenOdd.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        EvenOdd.java
+        SquareOfNumber.java
+        TableOfNumber.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git checkout -b Dev
+Switched to a new branch 'Dev'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git add SquareOfnumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git config core.autoclrf true
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git add SquareOfnumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git commit -m "Square Of Number Initial Commit"
+On branch Dev
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        EvenOdd.java
+        SquareOfNumber.java
+        TableOfNumber.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git status
+On branch Dev
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        EvenOdd.java
+        SquareOfNumber.java
+        TableOfNumber.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git log
+fatal: your current branch 'Dev' does not have any commits yet
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git checkout -b Test
+Switched to a new branch 'Test'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Test)
+$ git add TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Test)
+$ git commit -m "Second Commit"
+[Test (root-commit) 76d722c] Second Commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Test)
+$ git add EvenOdd.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Test)
+$ git commit -m "Even odd Commit"
+[Test ee0e4ab] Even odd Commit
+ 1 file changed, 12 insertions(+)
+ create mode 100644 EvenOdd.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Test)
+$ git checkout Dev
+error: pathspec 'Dev' did not match any file(s) known to git
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Test)
+$ git checkout -b Dev
+Switched to a new branch 'Dev'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git add SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git commit -m "Square of Number First Commit"
+[Dev 4f7b274] Square of Number First Commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ notepad SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git add SquareOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git commit -m "Some Required changes in Square of Number java file"
+[Dev f38c28f] Some Required changes in Square of Number java file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git status
+On branch Dev
+nothing to commit, working tree clean
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git log
+commit f38c28ffbfcd9db98a1e91d31858eb4b3ef37257 (HEAD -> Dev)
+Author: ShivaniYogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 13:01:28 2021 +0530
+
+    Some Required changes in Square of Number java file
+
+commit 4f7b274766f579b1d790cb176e5f64017a3df849
+Author: ShivaniYogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 12:58:26 2021 +0530
+
+    Square of Number First Commit
+
+commit ee0e4abe7e8a823acc1efc6b0bc0ad7f766856e7 (Test)
+Author: ShivaniYogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 12:56:31 2021 +0530
+
+    Even odd Commit
+
+commit 76d722c8fc2fa17753eab51d6d90f9ac8a107c88
+Author: ShivaniYogi <shivaniyogi01@gmail.com>
+Date:   Mon Jul 19 12:55:40 2021 +0530
+
+    Second Commit
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git checkout master
+error: pathspec 'master' did not match any file(s) known to git
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (Dev)
+$ git checkout -b master
+Switched to a new branch 'master'
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git merge Dev
+Already up to date.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git merge Test
+Already up to date.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git remote add origin https://github.com/ShivaniYogi/LetsDoAssignment1.git
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git remote
+origin
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git remote -v
+origin  https://github.com/ShivaniYogi/LetsDoAssignment1.git (fetch)
+origin  https://github.com/ShivaniYogi/LetsDoAssignment1.git (push)
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git config --global user.name "ShivaniYogi"
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git config --global user.email "shivaniyogi01@gmail.com"
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git config --list
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager-core
+credential.https://dev.azure.com.usehttppath=true
+init.defaultbranch=master
+user.name=ShivaniYogi
+user.email=shivaniyogi01@gmail.com
+pull.rebase=true
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+core.autoclrf=true
+remote.origin.url=https://github.com/ShivaniYogi/LetsDoAssignment1.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ git push -u origin master
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (12/12), 1.66 KiB | 340.00 KiB/s, done.
+Total 12 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/ShivaniYogi/LetsDoAssignment1.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/LetsDoAssignment1 (master)
+$ cd ..
+
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ mkdir CloneAssignDir
+
+user@DESKTOP-EOUFQB5 MINGW64 ~
+$ cd CloneAssignDir
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/CloneAssignDir
+$ git clone https://github.com/ShivaniYogi/LetsDoAssignment1.git
+Cloning into 'LetsDoAssignment1'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 12 (delta 1), reused 12 (delta 1), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (1/1), done.
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/CloneAssignDir
+$ ls LetsDoAssignment1
+EvenOdd.java  SquareOfNumber.java  TableOfNumber.java
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/CloneAssignDir
+$ cd LetsDoAssignment1
+
+user@DESKTOP-EOUFQB5 MINGW64 ~/CloneAssignDir/LetsDoAssignment1 (master)
+$ notepad solution.txt
